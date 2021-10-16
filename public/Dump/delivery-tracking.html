@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Delivery-Tracking</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body class="">
+  <header class="header">
+    <div class="container-fluid">
+      <ul class="header_ul">
+        <li><img src="images/logo.svg"></li>
+        <li>
+          <div class="table_center table_location">
+             <div class="drop-down">
+               <div id="dropDown" class="drop-down__button drop-down__button_jq">
+                 <span class="drop-down__name"><img class="location" src="images/Location.svg">Malakpet,Hyderabad <!--img class="arrow_down" src="images/Arrow-Down.svg"--></span>
+               </div>
+               
+              <!-- <div class="drop-down__menu-box">
+                 <ul class="drop-down__menu">
+                   <li data-name="profile" class="drop-down__item">Your Profile</li>
+                   <li data-name="dashboard" class="drop-down__item">Your Dashboard</li>
+                   <li data-name="activity" class="drop-down__item">Recent activity</li>
+                 </ul>
+               </div>-->
+             </div>
+          </div>
+        </li>
+        <li>
+          <div class="form-group has-search">
+            <img class="form-control-feedback" src="images/Search.svg">
+            <input type="text" class="form-control" placeholder="Search with name or seller">
+          </div>
+        </li>
+        <li>
+          <a class="filter_icon" href="#"><img src="images/Filter.svg"></a>
+        </li>
+        <li>
+          <a href="#" class="sell_btn"><img src="images/akra-icon.svg">Sell</a>
+        </li>
+        <li>
+          <div class="cart_notification">
+            <a href="#" class="cart_i"><img src="images/cart.svg"><span class="buds">9+</span></a>
+
+              <div class="table_center table_notification">
+                 <div class="drop-down">
+                   <div id="dropDown" class="drop-down__button_jq">
+                     <a href="#" class="notification_i"><img src="images/Notification.svg"><span class="buds">9+</span></a>
+                   </div>
+                   
+                   <div class="drop-down__menu-box">
+                    <div class="noti_title">Notifications</div>
+                     <ul class="noti_ul">
+                       <li>
+                          <div class="discount_div"><img src="images/Discount1.png"></div>
+                          <div class="discount_info">
+                             <h4>Lorem ipsum dolor</h4>
+                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra egestas eget </p>
+                             <div class="date_noti">06-June-2021</div>
+                          </div>
+                       </li>
+                       <li>
+                         <div class="discount_div"><img src="images/Discount1.png"></div>
+                          <div class="discount_info">
+                             <h4>Lorem ipsum dolor</h4>
+                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra egestas eget </p>
+                             <div class="date_noti">06-June-2021</div>
+                          </div>
+                       </li>
+                     </ul>
+                   </div>
+                 </div>
+              </div>
+          </div>
+        </li>
+        <li>
+          <div class="table_center table_user">
+             <div class="drop-down">
+               <div id="dropDown" class="down__button_s drop-down__button_jq">
+                 <span class="drop-down__name"><img src="images/user-img.svg"></span>
+               </div>
+               
+               <div class="drop-down__menu-box">
+                 <ul class="drop-down__menu">
+                   <li data-name="profile" class="drop-down__item"><a href="#"><img class="icon_i" src="images/user-img.svg"> Profile</a></li>
+                   <li data-name="dashboard" class="drop-down__item"><a href="#"><img class="icon_i" src="images/Send.svg"> Share Now</a></li>
+                   <li data-name="activity" class="drop-down__item"><a href="#"><img class="icon_i" src="images/Logout.svg"> Sign out</a></li>
+                 </ul>
+               </div>
+             </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <section>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="pb-5 pt-5 page_title">
+              <h1 class="mb-0 title_short">Set delivery radius</h1>
+          </div>
+          <form class="location_set">
+            <div class="form-group form-row mb_50">
+              <input type="text" class="form-control input_add3 location_i mb-3" id="text" placeholder="Your Location" name="uname" >
+              <!-- <input type="number" class="form-control input_add3 location_i" id="number" placeholder="Your Location" name="uname" value="0"> -->
+              <!-- <label for="m_number" class="label-helper">Your Location</label> -->
+            </div>
+            <div class="set_location">
+              <div class="row mb-3">
+                <div class="col-sm-6">
+                  <h4>Set Radius</h4>
+                  <span>In Kilometers</span>
+                </div>
+                <div class="col-sm-4">
+                  <div class="increase_icon">
+                   
+                    <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+              <input type="number" class="number" id="number" value="0"style="text-align:center; width:50px;" />
+              <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button type="submit" class="btn yellow_btn mb-3"><a href="./add-product.html">Add</a></button>
+          </form>
+        </div>
+        <div class="col-lg-8">
+          <iframe class="delivery_map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3430.436916182076!2d76.71486321450915!3d30.706115293967276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fee8e9827961b%3A0xea657d764f02c326!2s3b2%2C%20Mohali%20Bypass%2C%20Phase%203B-2%2C%20Sector%2060%2C%20Sahibzada%20Ajit%20Singh%20Nagar%2C%20Punjab%20160071!5e0!3m2!1sen!2sin!4v1627709145452!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+    function increaseValue() {
+	var value = parseInt(document.getElementById('number').value, 10);
+    value = isNaN(value) ? 0 : value;
+    value++;
+    document.getElementById('number').value = value;
+}
+
+function decreaseValue() {
+  var value = parseInt(document.getElementById('number').value, 10);
+  value = isNaN(value) ? 0 : value;
+  value < 1 ? value = 1 : '';
+  value--;
+  document.getElementById('number').value = value;
+}
+function increaseValue1() {
+  var value = parseInt(document.getElementById('number1').value, 10);
+  value = isNaN(value) ? 0 : value;
+  value++;
+  document.getElementById('number1').value = value;
+}
+
+function decreaseValue1() {
+  var value = parseInt(document.getElementById('number1').value, 10);
+  value = isNaN(value) ? 0 : value;
+  value < 1 ? value = 1 : '';
+  value--;
+  document.getElementById('number1').value = value;
+}
+  </script>
+</body>
+</html>

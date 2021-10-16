@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="container-fluid">
+      <ul class="header_mobile">
+        <li class="mobile_nav">
+            <img src="images/logo.svg">
+        </li>
+        <li class="mobile_nav">
+          <ul class="inner_nav">
+            <li>
+              <img class="form-control-feedback" src="images/Search.svg">
+            </li>
+            <li>
+              <div class="menu-toggle"><img src="images/menu.svg"></div>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+      <ul class="header_ul">
+        <li class="mobile_none"><img src="images/logo.svg"></li>
+        <li>
+          <div class="table_center table_location">
+             <div class="drop-down">
+               <div id="dropDown" class="drop-down__button drop-down__button_jq">
+                 <span class="drop-down__name"><img class="location" src="images/Location.svg">Malakpet, Hyderabad </span>
+               </div>
+               
+               <!-- <div class="drop-down__menu-box">
+                 <ul class="drop-down__menu">
+                   <li data-name="profile" class="drop-down__item">Your Profile</li>
+                   <li data-name="dashboard" class="drop-down__item">Your Dashboard</li>
+                   <li data-name="activity" class="drop-down__item">Recent activity</li>
+                 </ul>
+               </div> -->
+             </div>
+          </div>
+        </li>
+        <li class="mobile_none">
+          <div class="form-group has-search">
+            <img class="form-control-feedback" src="images/Search.svg">
+            <input type="text" class="form-control" placeholder="Search with name or seller">
+          </div>
+        </li>
+        <li>
+          <a class="filter_icon" href="#"><img src="images/Filter.svg"></a>
+        </li>
+        <li>
+          <a href="#" class="sell_btn"><img src="images/akra-icon.svg">Sell</a>
+        </li>
+        <li>
+          <div class="cart_notification">
+            <a href="#" class="cart_i"><img src="images/placeholder.png"></a>
+            <a href="#" class="cart_i"><img src="images/cart.svg"><span class="buds">9+</span></a>
+
+              <div class="table_center table_notification">
+                 <div class="drop-down">
+                   <div id="dropDown" class="drop-down__button_jq">
+                     <a href="#" class="notification_i"><img src="images/Notification.svg"><span class="buds">9+</span></a>
+                   </div>
+                   
+                   <div class="drop-down__menu-box">
+                    <div class="noti_title">Notifications</div>
+                     <ul class="noti_ul">
+                       <li>
+                          <div class="discount_div"><img src="images/Discount1.png"></div>
+                          <div class="discount_info">
+                             <h4>Lorem ipsum dolor</h4>
+                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra egestas eget </p>
+                             <div class="date_noti">06-June-2021</div>
+                          </div>
+                       </li>
+                       <li>
+                         <div class="discount_div"><img src="images/Discount1.png"></div>
+                          <div class="discount_info">
+                             <h4>Lorem ipsum dolor</h4>
+                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra egestas eget </p>
+                             <div class="date_noti">06-June-2021</div>
+                          </div>
+                       </li>
+                     </ul>
+                   </div>
+                 </div>
+              </div>
+          </div>
+        </li>
+        <li>
+          <div class="table_center table_user">
+             <div class="drop-down">
+               <div id="dropDown" class="down__button_s drop-down__button_jq">
+                 <span class="drop-down__name"><img src="images/user-img.svg"></span>
+               </div>
+               
+               <div class="drop-down__menu-box">
+                 <ul class="drop-down__menu">
+                   <li data-name="profile" class="drop-down__item"><a href="#"><img class="icon_i" src="images/user-img.svg"> Profile</a></li>
+                   <li data-name="dashboard" class="drop-down__item"><a href="./buyer-profile-order.html"><img class="icon_i" src="images/Send.svg"> Share Now</a></li>
+                   <li data-name="activity" class="drop-down__item"><a href="#"><img class="icon_i" src="images/Logout.svg"> Sign out</a></li>
+                </ul>
+               </div>
+             </div>
+          </div>
+        </li>
+        
+      </ul>
+
+    </div>
+  </header>
+  <section class="packages_sec padd_sec">
+    <div class="packages container-fluid">
+      <div class="pack_cum black_clr">
+        <a href="#">
+          <img src="images/home-vector.svg">
+          <h1>Products with Rewards of</h1>
+          <div class="pack_price">₹ 45 <img class="Arrow-Left2" src="images/Arrow-Left2.svg"></div>
+        </a>
+      </div>
+      <div class="pack_cum green_clr">
+        <a href="#">
+          <img src="images/home-vector.svg">
+          <h1>Products with Rewards of</h1>
+          <div class="pack_price">₹ 45 <img class="Arrow-Left2" src="images/Arrow-Left2.svg"></div>
+        </a>
+      </div>
+      <div class="pack_cum blue_clr">
+        <a href="#">
+          <img src="images/home-vector.svg">
+          <h1>Products with Rewards of</h1>
+          <div class="pack_price">₹ 45 <img class="Arrow-Left2" src="images/Arrow-Left2.svg"></div>
+        </a>
+      </div>
+      <div class="pack_cum lt_blue_clr">
+        <a href="#">
+          <img src="images/home-vector.svg">
+          <h1>Products with Rewards of</h1>
+          <div class="pack_price">₹ 45 <img class="Arrow-Left2" src="images/Arrow-Left2.svg"></div>
+        </a>
+      </div>
+      <div class="pack_cum yellow_clr">
+        <a href="#">
+          <img src="images/home-vector.svg">
+          <h1>Products with Rewards of</h1>
+          <div class="pack_price">₹ 45 <img class="Arrow-Left2" src="images/Arrow-Left2.svg"></div>
+        </a>
+      </div>
+    </div>
+  </section>
+  <section class="trending_sec">
+    <div class="container">
+      <div class="row section_title">
+        <div class="col-sm-6">
+          <h2 class="main_tlt">Trending Products</h2>
+        </div>
+        <div class="col-sm-6 text-right">
+          <a href="./product.html" class="view_all">View all</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="trending_pro">
+            <img src="images/Floatride_Energy.png">
+            <h4 class="pro_tlt">Reebok Running Shoes</h4>
+            <div class="pro_info">
+              <div class="info_col_lft">
+                <div class="pro_price">₹ 869</div>
+                <p>5 Day left</p>
+              </div>
+              <div class="info_col_rt">
+                <div class="progress blue"> 
+                  <span class="progress-left"><span class="progress-bar"></span></span>
+                  <span class="progress-right"><span class="progress-bar"></span></span>
+                  <div class="progress-value">80%</div>
+                </div>
+                <h6 class="">Sold</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="trending_pro">
+            <img src="images/Floatride_Energy.png">
+            <h4 class="pro_tlt">Reebok Running Shoes</h4>
+            <div class="pro_info">
+              <div class="info_col_lft">
+                <div class="pro_price">₹ 869</div>
+                <p>5 Day left</p>
+              </div>
+              <div class="info_col_rt">
+                <div class="progress blue"> 
+                  <span class="progress-left"><span class="progress-bar"></span></span>
+                  <span class="progress-right"><span class="progress-bar"></span></span>
+                  <div class="progress-value">80%</div>
+                </div>
+                <h6 class="">Sold</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="trending_pro">
+            <img src="images/Floatride_Energy.png">
+            <h4 class="pro_tlt">Reebok Running Shoes</h4>
+            <div class="pro_info">
+              <div class="info_col_lft">
+                <div class="pro_price">₹ 869</div>
+                <p>5 Day left</p>
+              </div>
+              <div class="info_col_rt">
+                <div class="progress blue"> 
+                  <span class="progress-left"><span class="progress-bar"></span></span>
+                  <span class="progress-right"><span class="progress-bar"></span></span>
+                  <div class="progress-value">80%</div>
+                </div>
+                <h6 class="">Sold</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="trending_pro">
+            <img src="images/Floatride_Energy.png">
+            <h4 class="pro_tlt">Reebok Running Shoes</h4>
+            <div class="pro_info">
+              <div class="info_col_lft">
+                <div class="pro_price">₹ 869</div>
+                <p>5 Day left</p>
+              </div>
+              <div class="info_col_rt">
+                <div class="progress blue"> 
+                  <span class="progress-left"><span class="progress-bar"></span></span>
+                  <span class="progress-right"><span class="progress-bar"></span></span>
+                  <div class="progress-value">80%</div>
+                </div>
+                <h6 class="">Sold</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="trending_pro">
+            <img src="images/Floatride_Energy.png">
+            <h4 class="pro_tlt">Reebok Running Shoes</h4>
+            <div class="pro_info">
+              <div class="info_col_lft">
+                <div class="pro_price">₹ 869</div>
+                <p>5 Day left</p>
+              </div>
+              <div class="info_col_rt">
+                <div class="progress blue"> 
+                  <span class="progress-left"><span class="progress-bar"></span></span>
+                  <span class="progress-right"><span class="progress-bar"></span></span>
+                  <div class="progress-value">80%</div>
+                </div>
+                <h6 class="">Sold</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="product_filter padd_sec">
+<div class="container">
+        
+        <div class="row section_title">
+          <div class="col-sm-6">
+            <h2 class="main_tlt">Categories</h2>
+          </div>
+          <div class="col-sm-6 text-right">
+            <a href="./product.html" class="view_all">View all</a>
+          </div>
+        </div>
+<div class="row">
+  <div class="col-sm-12 section_title">
+        <div class="text-left">
+            <button class="link_l btn-link filter-button" data-filter="all">Clothing</button>
+            <button class="link_l btn-link filter-button" data-filter="hdpe">Food</button>
+            <button class="link_l btn-link filter-button" data-filter="sprinkle">Decor</button>
+            <button class="link_l btn-link filter-button" data-filter="spray">Gifting</button>
+            <button class="link_l btn-link filter-button" data-filter="irrigation">Cosmetics</button>
+        </div>
+      </div>
+
+        <div class="col filter hdpe">
+          <div class="trending_pro">
+            <img src="images/Floatride_Energy.png">
+            <h4 class="pro_tlt">Reebok Running Shoes</h4>
+            <div class="pro_info">
+              <div class="info_col_lft">
+                <div class="pro_price">₹ 869</div>
+                <p>5 Day left</p>
+              </div>
+              <div class="info_col_rt">
+                <div class="progress blue"> 
+                  <span class="progress-left"><span class="progress-bar"></span></span>
+                  <span class="progress-right"><span class="progress-bar"></span></span>
+                  <div class="progress-value">80%</div>
+                </div>
+                <h6 class="">Sold</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col filter sprinkle hdpe irrigation">
+          <div class="trending_pro">
+            <img src="images/Floatride_Energy.png">
+            <h4 class="pro_tlt">Reebok Running Shoes</h4>
+            <div class="pro_info">
+              <div class="info_col_lft">
+                <div class="pro_price">₹ 869</div>
+                <p>5 Day left</p>
+              </div>
+              <div class="info_col_rt">
+                <div class="progress blue"> 
+                  <span class="progress-left"><span class="progress-bar"></span></span>
+                  <span class="progress-right"><span class="progress-bar"></span></span>
+                  <div class="progress-value">80%</div>
+                </div>
+                <h6 class="">Sold</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col filter irrigation hdpe">
+          <div class="trending_pro">
+            <img src="images/Floatride_Energy.png">
+            <h4 class="pro_tlt">Reebok Running Shoes</h4>
+            <div class="pro_info">
+              <div class="info_col_lft">
+                <div class="pro_price">₹ 869</div>
+                <p>5 Day left</p>
+              </div>
+              <div class="info_col_rt">
+                <div class="progress blue"> 
+                  <span class="progress-left"><span class="progress-bar"></span></span>
+                  <span class="progress-right"><span class="progress-bar"></span></span>
+                  <div class="progress-value">80%</div>
+                </div>
+                <h6 class="">Sold</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col filter spray irrigation">
+          <div class="trending_pro">
+            <img src="images/Floatride_Energy.png">
+            <h4 class="pro_tlt">Reebok Running Shoes</h4>
+            <div class="pro_info">
+              <div class="info_col_lft">
+                <div class="pro_price">₹ 869</div>
+                <p>5 Day left</p>
+              </div>
+              <div class="info_col_rt">
+                <div class="progress blue"> 
+                  <span class="progress-left"><span class="progress-bar"></span></span>
+                  <span class="progress-right"><span class="progress-bar"></span></span>
+                  <div class="progress-value">80%</div>
+                </div>
+                <h6 class="">Sold</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col filter spray">
+          <div class="trending_pro">
+            <img src="images/Floatride_Energy.png">
+            <h4 class="pro_tlt">Reebok Running Shoes</h4>
+            <div class="pro_info">
+              <div class="info_col_lft">
+                <div class="pro_price">₹ 869</div>
+                <p>5 Day left</p>
+              </div>
+              <div class="info_col_rt">
+                <div class="progress blue"> 
+                  <span class="progress-left"><span class="progress-bar"></span></span>
+                  <span class="progress-right"><span class="progress-bar"></span></span>
+                  <div class="progress-value">80%</div>
+                </div>
+                <h6 class="">Sold</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+    </div>
+  </section>
+<footer class="footer-main">
+  <div class="container">
+    <div class="row">
+      <div class="col foot_100">
+        <div class="footer-cum">
+          <h4><img src="images/footer-logo.png"></h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+      <div class="col foot_100">
+            <div class="footer-cum">
+              <h4>About</h4>
+              <ul class="menu_f">
+                <li><a href="">Contact us</a></li>
+                <li><a href="">About us</a></li>
+                <li><a href="">Career</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col foot_100">
+            <div class="footer-cum">
+              <h4>Policy</h4>
+              <ul class="menu_f">
+                <li><a href="">Refund Policy</a></li>
+                <li><a href="">Terms of use</a></li>
+                <li><a href="">Privacy Policy</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col foot_100">
+            <div class="footer-cum">
+              <h4>Downloads</h4>
+              <ul class="menu_f">
+                <li><a href="">Download our app </a></li>
+              </ul>
+            </div>
+          </div>
+      <!-- <div class="col-md-6">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="footer-cum">
+              <h4>About</h4>
+              <ul class="menu_f">
+                <li><a href="">Contact us</a></li>
+                <li><a href="">About us</a></li>
+                <li><a href="">Career</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="footer-cum">
+              <h4>Policy</h4>
+              <ul class="menu_f">
+                <li><a href="">Refund Policy</a></li>
+                <li><a href="">Terms of use</a></li>
+                <li><a href="">Privacy Policy</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="footer-cum">
+              <h4>Downloads</h4>
+              <ul class="menu_f">
+                <li><a href="">Download our app </a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div> -->
+      <div class="col foot_100">
+        <div class="footer-cum">
+          <h4>
+            <ul class="footer_icon">
+              <li><a href=""><img src="images/fb.svg"></a></li>
+              <li><a href=""><img src="images/insta.svg"></a></li>
+              <li><a href=""><img src="images/whtsapp.svg"></a></li>
+              <li><a href=""><img src="images/twiter.svg"></a></li>
+            </ul>
+          </h4>
+          <ul class="contact_us">
+            <li><a href="tell:0000000000"><img src="images/chat.svg"> +91 0000000000</a></li>
+            <li><a href="mailto:Hello@email.com"><img src="images/chat.svg"> Hello@email.com</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer_bottom">
+      <div class="row">
+        <div class="col-sm-6">
+          <a href="">© Frihbi  2021</a>
+        </div>
+        <div class="col-sm-6 text-right">
+          <p>Based in Hyderabad, India</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="sidebar">
+  <div class="cart_sidebar">
+    <div class="cart_hd">
+      <div class="cart_title">
+        <h2>Cart</h2>
+        <p>2 items in cart</p>
+      </div>
+      <button class="sidebarBtn">
+        <img src="images/crose.svg">
+      </button>
+    </div>
+    <ul class="cart_body">
+      <li>
+        <div class="odr_dtl_r">
+          <div class="odr_dtl_c3">
+            <img src="images/Floatride_Energy.png">
+          </div>
+          <div class="odr_dtl_c_7">
+            <div class="od_ct">
+              <div class="w-100">
+                <h2>Reebok Running Shoes</h2>
+              </div>
+              <div class="w-100 d-flex flex-wrap align-items-end">
+                <div>
+                  <h5>₹ 4500</h5>
+                  <p>5 Day left</p>
+                  <form class="inc_dec home_inc_dec">
+                    <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+                    <input type="number" id="number" value="0">
+                    <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+                  </form>
+                </div>
+                <div class="progress blue"> 
+                  <span class="progress-left"><span class="progress-bar"></span></span>
+                  <span class="progress-right"><span class="progress-bar"></span></span>
+                  <div class="progress-value">80%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="odr_dtl_r">
+          <div class="odr_dtl_c3">
+            <img src="images/Floatride_Energy.png">
+          </div>
+          <div class="odr_dtl_c_7">
+            <div class="od_ct">
+              <div class="w-100">
+                <h2>Reebok Running Shoes</h2>
+              </div>
+              <div class="w-100 d-flex flex-wrap align-items-end">
+                <div>
+                  <h5>₹ 4500</h5>
+                  <p>5 Day left</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+    <div class="cart_footer">
+      <div class="totle_price">Total Price <span>₹ 13500</span></div>
+      <a href="" class="btn yellow_btn mb-3">Place Order <img src="images/small_right.svg"></a>
+    </div>
+  </div>
+</div>
+<div class="over-lay"></div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.menu-toggle').click(function(){
+        $('.header_ul').slideToggle();
+      });
+       $('.cart_i').click(function(){
+         $('.sidebar').toggleClass('active');
+         $('.over-lay').toggleClass('sidebar_overlay');
+         
+       });
+       $('.sidebarBtn').click(function() {
+         $('.sidebar').removeClass('active');
+         $('.over-lay').removeClass('sidebar_overlay');
+       });
+      $('.drop-down__button_jq').click(function(){
+        $(this).parent().toggleClass('drop-down--active');
+      });
+
+      $('.packages').slick({
+        dots: false,
+        infinite: false,
+        speed: 300,
+        arrows:false,
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 1
+            }
+          },
+          {
+            breakpoint: 980,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+          // You can unslick at a given breakpoint now by adding:
+          // settings: "unslick"
+          // instead of a settings object
+        ]
+      });
+
+        $(".filter-button").click(function(){
+            var value = $(this).attr('data-filter');
+            
+            if(value == "all")
+            {
+                //$('.filter').removeClass('hidden');
+                $('.filter').show('1000');
+            }
+            else
+            {
+    //            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
+    //            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
+                $(".filter").not('.'+value).hide('3000');
+                $('.filter').filter('.'+value).show('3000');
+                
+            }
+        });
+        
+        if ($(".filter-button").removeClass("active")) {
+    $(this).removeClass("active");
+    }
+    $(this).addClass("active");
+
+    });
+
+  </script>
+  <script type="text/javascript">
+    function increaseValue() {
+  var value = parseInt(document.getElementById('number').value, 10);
+  value = isNaN(value) ? 0 : value;
+  value++;
+  document.getElementById('number').value = value;
+}
+
+function decreaseValue() {
+  var value = parseInt(document.getElementById('number').value, 10);
+  value = isNaN(value) ? 0 : value;
+  value < 1 ? value = 1 : '';
+  value--;
+  document.getElementById('number').value = value;
+}
+  </script>
+</body>
+</html>
